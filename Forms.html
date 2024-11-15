@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formuláře</title>
+</head>
+<body>
+
+<form action="Forms.html" method="post">
+    <label for="textinput">Jméno</label>
+    <input type="text" name="text" id="textinput" required maxlength="10" minlength="5">
+<br>
+    <input type="email" placeholder="naco@email.cz">
+
+
+
+    <br>
+    <label for="textarea"></label>
+    <textarea id="textarea" name="textarea">
+        Text
+    </textarea>
+
+    <label for="option"></label>
+    <select  name="select" id="option">
+        <option>volba1</option>
+        <option>volba2</option>
+        <option>volba3</option>
+        <optgroup label="zvíře">
+            <option>pes</option>
+            <option>kočka</option>
+        </optgroup>
+        <optgroup label="věci">
+            <option>lampa</option>
+        </optgroup>
+    </select>
+
+    <label>Věk</label>
+    <label>
+        <input type="number" value="22" name="číslo" max="10" min="0" step="2" readonly disabled>
+    </label>
+
+    <label for="checkbox">Nejsem robot</label>
+    <input type="checkbox" id="checkbox">
+
+    <br>
+    <label for="radio">Ano</label>
+    <input type="radio" name="volba" id="radio" value="Ano">
+    <br>
+    <label for="radio1">Ne</label>
+    <input type="radio" name="volba" id="radio1" value="Ne">
+    <br>
+
+    <input type="submit" value="text odeslání">
+    <button>Poslat</button>
+
+
+</form>
+
+</body>
+</html>
